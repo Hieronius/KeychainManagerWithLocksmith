@@ -1,0 +1,6 @@
+framework module Pods_KeychainManagerWithLocksmith {
+  umbrella header "Pods-KeychainManagerWithLocksmith-umbrella.h"
+
+  export *
+  module * { export * }
+}

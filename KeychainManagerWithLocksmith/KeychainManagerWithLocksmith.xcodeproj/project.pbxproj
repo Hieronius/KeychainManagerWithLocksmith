@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C53C247F3E67E626BD958515 /* Pods_KeychainManagerWithLocksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB348D91D523D0A836D1DBA /* Pods_KeychainManagerWithLocksmith.framework */; };
 		DD90804A2A3834E7009EC99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9080492A3834E7009EC99E /* AppDelegate.swift */; };
 		DD90804C2A3834E7009EC99E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90804B2A3834E7009EC99E /* SceneDelegate.swift */; };
 		DD90804E2A3834E7009EC99E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90804D2A3834E7009EC99E /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C24A894E4C13EB38DD139AB /* Pods-KeychainManagerWithLocksmith.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeychainManagerWithLocksmith.debug.xcconfig"; path = "Target Support Files/Pods-KeychainManagerWithLocksmith/Pods-KeychainManagerWithLocksmith.debug.xcconfig"; sourceTree = "<group>"; };
+		2DB348D91D523D0A836D1DBA /* Pods_KeychainManagerWithLocksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeychainManagerWithLocksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EABD1B0B1D456CE7E2C10D6 /* Pods-KeychainManagerWithLocksmith.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeychainManagerWithLocksmith.release.xcconfig"; path = "Target Support Files/Pods-KeychainManagerWithLocksmith/Pods-KeychainManagerWithLocksmith.release.xcconfig"; sourceTree = "<group>"; };
 		DD9080462A3834E7009EC99E /* KeychainManagerWithLocksmith.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainManagerWithLocksmith.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9080492A3834E7009EC99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD90804B2A3834E7009EC99E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53C247F3E67E626BD958515 /* Pods_KeychainManagerWithLocksmith.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB8C7169074549E05A373DF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DB348D91D523D0A836D1DBA /* Pods_KeychainManagerWithLocksmith.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD495040764734938ED0AE14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C24A894E4C13EB38DD139AB /* Pods-KeychainManagerWithLocksmith.debug.xcconfig */,
+				7EABD1B0B1D456CE7E2C10D6 /* Pods-KeychainManagerWithLocksmith.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD90803D2A3834E7009EC99E = {
 			isa = PBXGroup;
 			children = (
 				DD9080482A3834E7009EC99E /* KeychainManagerWithLocksmith */,
 				DD9080472A3834E7009EC99E /* Products */,
+				BD495040764734938ED0AE14 /* Pods */,
+				BB8C7169074549E05A373DF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD90805A2A3834EB009EC99E /* Build configuration list for PBXNativeTarget "KeychainManagerWithLocksmith" */;
 			buildPhases = (
+				CD006F7B6BDC0A469A9FB5E0 /* [CP] Check Pods Manifest.lock */,
 				DD9080422A3834E7009EC99E /* Sources */,
 				DD9080432A3834E7009EC99E /* Frameworks */,
 				DD9080442A3834E7009EC99E /* Resources */,
+				656AC59E2648D74A61A01276 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		656AC59E2648D74A61A01276 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeychainManagerWithLocksmith/Pods-KeychainManagerWithLocksmith-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeychainManagerWithLocksmith/Pods-KeychainManagerWithLocksmith-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeychainManagerWithLocksmith/Pods-KeychainManagerWithLocksmith-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD006F7B6BDC0A469A9FB5E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeychainManagerWithLocksmith-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD9080422A3834E7009EC99E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		DD90805B2A3834EB009EC99E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C24A894E4C13EB38DD139AB /* Pods-KeychainManagerWithLocksmith.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		DD90805C2A3834EB009EC99E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EABD1B0B1D456CE7E2C10D6 /* Pods-KeychainManagerWithLocksmith.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
