@@ -35,7 +35,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNT-Ps-OIY">
                                 <rect key="frame" x="134" y="344" width="107" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stu-0n-mfT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +52,10 @@
                             <constraint firstItem="k9e-qH-HH5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="foV-ru-dh6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="pzJ-5s-Jwn" id="OYH-tW-Lgd"/>
+                        <outlet property="passwordTextField" destination="kNu-yO-fWv" id="rbK-TU-cWw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
