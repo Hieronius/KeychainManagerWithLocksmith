@@ -19,13 +19,31 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     // MARK: - IBActions
 
     @IBAction private func saveButtonAction(_ sender: UIButton) {
         // save data from keychain
+    }
+    
+    // MARK: - Private Methods
+    
+    private func saveData() {
+        if let login = loginTextField.text, let password = passwordTextField.text {
+            do {
+                // array of data objects with Distionary data type
+                try Locksmith.saveData(data: ["Login": login, "Password": password], forUserAccount: "MyAccount")
+            } catch {
+                // catch an error if save process wasn't successful
+                print("unable to save data")
+            }
+        }
+    }
+    
+    private func loadData() {
+        let dictionary = Locksmith.loadDataForUserAccount(userAccount: "MyAccount")
     }
 }
 
